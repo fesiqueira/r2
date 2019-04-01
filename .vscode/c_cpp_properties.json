@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Arduino",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceRoot}"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"
+            ],
+            "browse": {
+                "path": [
+                    "/Applications/Arduino.app/Contents/Java/hardware",
+                    "/Applications/Arduino.app/Contents/Java/libraries",
+                    "${HOME}/Arduino/hardware",
+                    "${HOME}/Arduino/libraries",
+                    "${workspaceFolder}/**",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
