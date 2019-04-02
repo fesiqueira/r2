@@ -1,0 +1,21 @@
+{
+  "name": "r2",
+  "version": "0.0.1",
+  "keywords": "http, web, server, client, ethernet, api",
+  "description": "A Gorilla Mux-esque ethernet library for Arduino",
+  "homepage": "https://github.com/njh/EtherCard",
+  "authors": [
+    {
+      "name": "Felipe Siqueira Pinheiro",
+      "url": "https://github.com/fesiqp",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fesiqp/r2.git"
+  },
+  "license": "GPL-2.0",
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
