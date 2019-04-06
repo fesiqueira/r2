@@ -13,6 +13,8 @@
                 "path": [
                     "/Applications/Arduino.app/Contents/Java/hardware",
                     "/Applications/Arduino.app/Contents/Java/libraries",
+                    "${HOME}/Documents/Arduino/hardware",
+                    "${HOME}/Documents/Arduino/libraries",
                     "${HOME}/Arduino/hardware",
                     "${HOME}/Arduino/libraries",
                     "${workspaceFolder}/**",
