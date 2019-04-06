@@ -22,4 +22,13 @@ void setup() {
     }
 }
 
-void loop() { Server.handle(); }
+void loop() {
+    // For now it only supports one route
+    Server.handle("GET", "/hello", helloWorld);
+}
+
+String helloWorld() {
+    String response;
+    response.concat("{\"message\":\"Hello World!\"}\n");
+    return response;
+}
