@@ -9,15 +9,16 @@
 #define ethercard 1
 
 class Server {
-public:
-  Server(uint8_t module, const uint8_t *macAddr);
-  int begin();
-  bool DHCP();
-  void handle();
+   public:
+    Server(uint8_t module, const uint8_t *macAddr);
+    int begin();
+    bool DHCP();
+    void handle();
+    void describe();
 
-private:
-  uint8_t _module;
-  const uint8_t *_macAddr;
+   private:
+    uint8_t _module;
+    const uint8_t *_macAddr;
 };
 
 #endif
