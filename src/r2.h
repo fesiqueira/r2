@@ -13,7 +13,7 @@ class Server {
     Server(uint8_t module, const uint8_t *macAddr);
     int begin();
     bool DHCP();
-    void handle();
+    void handle(String method, char *path, String (*f)(void));
     void describe();
 
    private:
