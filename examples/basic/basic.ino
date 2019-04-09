@@ -18,17 +18,22 @@ void setup() {
         Serial.println(F("DHCP failed"));
     } else {
         Serial.println(F("DHCP success"));
-        Server.describe();
     }
+
+    Server.get("/info", whoami);
+    Server.get("/hello", helloWorld);
+
+    Server.describe();
 }
 
 void loop() {
-    // For now it only supports one route
-    Server.handle("GET", "/hello", helloWorld);
+    Server.listen();
 }
 
-String helloWorld() {
-    String response;
-    response.concat("{\"message\":\"Hello World!\"}\n");
-    return response;
+char* helloWorld() {
+    return "{\"message\":\"Hello World!\"}\n";
+}
+
+char* whoami() {
+    return "{\"name\": \"r2\"}\n";
 }
